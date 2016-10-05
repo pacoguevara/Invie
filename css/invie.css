@@ -31,4 +31,13 @@ body {
 
 .menu {
   font-size: 24px;
+  display: inline-block;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.logo {
+  display: inline-block;
 }
