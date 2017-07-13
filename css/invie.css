@@ -4,11 +4,15 @@ body {
 }
 
 .button {
-  border-radius: 5px;
+  border-radius: 12px;
   background: #fd324e;
   color: white;
   border: none;
-  padding: 7px;
+  padding: 7px 12px;
+  font-size: 18px;
+  background: linear-gradient(to left, #fd324e, #ff7250);
+  cursor: pointer;
+  text-decoration: none;
 }
 
 .titulo {
@@ -16,6 +20,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 0;
   margin-top: 70px;
+}
+
+.titulo span {
+  text-decoration: underline;
 }
 
 .title-a {
@@ -35,8 +43,10 @@ body {
 
 .portada {
   background-image: url('../images/background.png');
+  background-size: cover;
   color: white;
   padding: 20px;
+  height: 500px;
 }
 
 .portada button {
@@ -54,6 +64,11 @@ body {
   right: 0;
 }
 
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
 .menu li {
   display: inline-block;
   margin-left: 30px;
@@ -61,6 +76,7 @@ body {
 
 .logo {
   display: inline-block;
+  margin-left: 0px;
 }
 
 .contenedor {
@@ -80,6 +96,10 @@ body {
   padding: 0;
 }
 
+.guitarra.b {
+  height: 190px;
+}
+
 .right {
   float: right;
   position: relative;
@@ -89,7 +109,6 @@ body {
 .left {
   float: left;
   position: relative;
-  top: 80px;
 }
 
 .contenedor-guitarra-a {
@@ -98,6 +117,8 @@ body {
 
 .contenedor-guitarra-b {
   margin-left: 370px;
+  position: relative;
+  bottom: 80px;
 }
 
 .header {
