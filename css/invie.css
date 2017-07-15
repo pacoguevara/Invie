@@ -80,7 +80,7 @@ body {
 }
 
 .contenedor {
-  width: 800px;
+  max-width: 800px;
   margin: auto;
 }
 
@@ -206,4 +206,55 @@ td {
 table, td, th {
   border: 1px solid #273b47;
   border-collapse: collapse;
+}
+
+@media screen and (max-width: 800px) {
+
+  /* PORTADA */
+  .titulo{
+    font-size: 45px;
+    margin-top: 30px;
+  }
+
+  .title-a {
+    font-size: 18px;
+  }
+
+  .portada {
+    height: auto;
+  }
+
+  .portada .button {
+    margin-bottom: 30px;
+    display: inline-block;
+  }
+  /* PORTADA END */
+
+  /* GUITARRAS START*/
+  .guitarras {
+    text-align: center;
+  }
+
+  .left, .right {
+    float: none;
+    position: static;
+  }
+
+  .title-b {
+    margin: 0;
+  }
+
+  .guitarra li {
+    list-style: none;
+  }
+
+  .guitarra.b {
+    height: auto;
+  }
+
+  .contenedor-guitarra-b{
+    margin: 0;
+    position: static;
+  }
+  /* GUITARRAS END*/
 }
