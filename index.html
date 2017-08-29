@@ -5,6 +5,7 @@
     <link href="https://fonts.googleapis.com/css?family=Allerta|Montserrat" rel="stylesheet">
     <link rel="stylesheet" href="css/invie.css" charset="utf-8">
     <title>Invie - Tus mejores guitarras</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body>
     <section id="portada" class="portada">
@@ -12,7 +13,8 @@
       <figure class="logo">
         <img src="images/invie.png" width="186" height="60" alt="Invie logotipo" />
       </figure>
-      <nav class="menu">
+      <span class="burguer-btn icon-menu" id="burguer-btn"></span>
+      <nav class="menu" id="menu">
         <ul>
           <li>
             <a href="index.html">Home</a>
@@ -104,5 +106,26 @@
         </form>
       </div>
     </footer>
+    <script>
+      var consulta = window.matchMedia('(max-width: 500px)');
+      consulta.addListener(mediaQuery);
+
+      var $burguerBtn = document.getElementById('burguer-btn');
+      var $menu = document.getElementById('menu');
+      
+      function toggleMenu(){
+        $menu.classList.toggle('active');
+      }
+
+      function mediaQuery(){
+        if(consulta.matches){
+          $burguerBtn.addEventListener('click', toggleMenu)
+        }else{
+          $burguerBtn.removeEventListener('click', toggleMenu)
+        }
+      }
+
+      mediaQuery();
+    </script>
   </body>
 </html>
