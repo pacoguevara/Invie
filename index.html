@@ -37,7 +37,7 @@
     <section id="guitarras" class="guitarras contenedor">
       <h2>Nuestras guitarras</h2>
       <article class="guitarra">
-        <img src="images/invie-acustica.png" width="350" height="auto" alt="Guitarra Invie Acustica" class="right"/>
+        <img data-src="images/invie-acustica.png" width="350" height="auto" alt="Guitarra Invie Acustica" class="right"/>
         <div class="contenedor-guitarra-a">
           <h3 class="title-b">Invie Acústica</h3>
           <ol>
@@ -49,7 +49,7 @@
       </article>
       <!-- guitarra 2 -->
       <article class="guitarra b">
-        <img src="images/invie-classic.png" width="350" height="auto" alt="Guitarra Invie Classic" class="left"/>
+        <img data-src="images/invie-classic.png" width="350" height="auto" alt="Guitarra Invie Classic" class="left"/>
         <div class="contenedor-guitarra-b">
           <h3 class="title-b">Invie Classic</h3>
           <ol>
@@ -63,7 +63,7 @@
     <footer class='footer'>
       <div class="contenedor">
         <div class="contacto">
-          <img src="images/invie-white.png" alt="Logotipo blanco" />
+          <img data-src="images/invie-white.png" alt="Logotipo blanco" />
           <a href="tel:+528341234567"><strong>Teléfono</strong> <span>8341234567</span></a>
           <a href="mailto:pacoguevaraa@gmail.com"><strong>E-mail</strong><span>pacoguevaraa@gmail.com</span></a>
         </div>
@@ -106,6 +106,7 @@
         </form>
       </div>
     </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
     <script>
       var consulta = window.matchMedia('(max-width: 500px)');
       consulta.addListener(mediaQuery);
@@ -126,6 +127,11 @@
       }
 
       mediaQuery();
+
+      var bLazy = new Blazy({
+        selector: 'img'
+      });
+
     </script>
   </body>
 </html>
